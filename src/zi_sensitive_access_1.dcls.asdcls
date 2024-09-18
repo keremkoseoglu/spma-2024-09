@@ -1,0 +1,9 @@
+@EndUserText.label: 'Access control'
+@MappingRole: true
+define role ZI_SENSITIVE_ACCESS_1 {
+  grant
+    select
+      on
+        ZI_SENSITIVE_INVOICE_1; 
+        
+}

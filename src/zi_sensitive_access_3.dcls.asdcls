@@ -1,0 +1,11 @@
+@EndUserText.label: 'Sensitive access 3'
+@MappingRole: true
+define role ZI_SENSITIVE_ACCESS_3 {
+  grant 
+    select
+      on
+        ZI_SENSITIVE_INVOICE_3
+          where
+            (carrid) = aspect pfcg_auth(S_CARRID, carrid, actvt = '03');
+            
+}

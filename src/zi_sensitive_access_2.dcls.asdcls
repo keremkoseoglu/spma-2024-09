@@ -1,0 +1,12 @@
+@EndUserText.label: 'Sensitive access 2'
+@MappingRole: true
+define role ZI_SENSITIVE_ACCESS_2 {
+  grant
+    select
+      on
+        ZI_SENSITIVE_INVOICE_2
+          where
+            _customer.country = 'DE'
+            or _customer.country = 'IT';
+            
+}
